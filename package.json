@@ -1,0 +1,21 @@
+{
+  "name": "web-dev",
+  "version": "0.0.0",
+  "description": "Tips, tech, and tactics for Planet web developers",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/planetlabs/web-dev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planetlabs/web-dev/issues"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "npm run doc:serve",
+    "doc:serve": "gitbook serve",
+    "doc:build": "gitbook build"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^0.3.6"
+  }
+}
