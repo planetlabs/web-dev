@@ -4,6 +4,8 @@
 
 You should be able to find an installer for your system by visiting https://nodejs.org/.
 
+Installing nodejs in Ubuntu requires adding a PPA, but for your Vagrant or Productions server provisioning, you can use the [nodejs ansible role](https://github.com/planetlabs/planet_roles/tree/master/nodejs) in planet_roles.
+
 ## Managing multiple versions of Node
 
 When working with a variety of Node-based projects, you may find the need to have multiple versions of Node installed.  If you find yourself in this situation, you can use the [Node Version Manager](https://github.com/creationix/nvm) (`nvm`).  `nvm` provides an easy way to install new versions, switch between versions, and manage which version you run by default.  See the [project readme](https://github.com/creationix/nvm) for easy instructions on getting set up.  This works even if you have already installed Node with the official nodejs.org installers.
