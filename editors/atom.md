@@ -23,3 +23,6 @@ Settings:
 ### `docblockr`
 
 [Makes it easier](https://atom.io/packages/docblockr) to write nicely formatted comment blocks.
+
+### `vim-mode, ex-mode`
+  Get vi keybindings in Atom!
