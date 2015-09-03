@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Node | Planet Web Developer&#39;s Guide</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.3.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../tools/eslint.html" />
+    
+    
+    <link rel="prev" href="../tools/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="Wed Sep 02 2015 18:01:01 GMT-0600 (MDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="tools/index.html">
+            
+                
+                    <a href="../tools/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Tools
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1" data-path="tools/node.html">
+            
+                
+                    <a href="../tools/node.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Node
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="tools/eslint.html">
+            
+                
+                    <a href="../tools/eslint.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        ESLint
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="editors/index.html">
+            
+                
+                    <a href="../editors/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Editors
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="editors/atom.html">
+            
+                
+                    <a href="../editors/atom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Atom
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Planet Web Developer&#39;s Guide</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="node">Node</h1>
+<h2 id="installation">Installation</h2>
+<p>You should be able to find an installer for your system by visiting <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a>.</p>
+<h2 id="managing-multiple-versions-of-node">Managing multiple versions of Node</h2>
+<p>When working with a variety of Node-based projects, you may find the need to have multiple versions of Node installed.  If you find yourself in this situation, you can use the <a href="https://github.com/creationix/nvm" target="_blank">Node Version Manager</a> (<code>nvm</code>).  <code>nvm</code> provides an easy way to install new versions, switch between versions, and manage which version you run by default.  See the <a href="https://github.com/creationix/nvm" target="_blank">project readme</a> for easy instructions on getting set up.  This works even if you have already installed Node with the official nodejs.org installers.</p>
+<p>After installing <code>nvm</code>, you can configure which version runs by default by adding a line like the following to your <code>~/.profile</code>:</p>
+<pre><code>nvm use 0.12 &gt; /dev/null
+</code></pre><p>Note that this assumes you have the target version installed (e.g. with <code>nvm install 0.12</code>).</p>
+<h2 id="-npm"><code>npm</code></h2>
+<p>Your installation of Node comes with <code>npm</code> as a package manager.  Typically, <code>npm</code> is used to install or publish packages hosted in the <a href="https://www.npmjs.com/" target="_blank">https://www.npmjs.com/</a> registry.  You should be able to find a front- or back-end package to meet virtually any development need in the repository.  <code>npm</code> can also be used to install packages from a local filesystem or from GitHub.</p>
+<p>Since <code>npm</code> may be updated more often that you install new versions of Node, you can use <code>npm</code> to update itself.</p>
+<pre><code>npm update --global npm
+</code></pre><h3 id="installing-project-dependencies">Installing project dependencies</h3>
+<p>After creating a directory for your project, the first thing you&apos;ll want to do is create a <code>package.json</code> file that will list your project dependencies (among other things).  Run the following and answer the prompts to create a <code>package.json</code> file:</p>
+<pre><code>npm init
+</code></pre><p>Even if you don&apos;t plan on publishing your project to the <a href="https://www.npmjs.com/" target="_blank">https://www.npmjs.com/</a> registry, you&apos;ll want to have this <code>package.json</code> file.  If you are concerned about accidentally publishing a package, you can add <code>&quot;private&quot;: true</code> to your <code>package.json</code> to ensure that it is not published publicly.  The registry also supports publishing <a href="https://www.npmjs.com/private-modules" target="_blank">private packages</a>.</p>
+<h3 id="development-dependencies">Development dependencies</h3>
+<p>Development dependencies are things like a test runner, linter, minifier, etc. that you use in development, but are not required by any consumers of your package.  Development dependencies go in the <code>devDependencies</code> section of your <code>package.json</code> file.  You can install a package and save it as a development dependency with the following command (for the <a href="https://www.npmjs.com/package/eslint" target="_blank"><code>eslint</code> package</a>):</p>
+<pre><code>npm install --save-dev eslint
+</code></pre><p>One of the nice things about <code>npm</code> is that it installs packages <strong>locally</strong> by default.  This means that you can have many projects living in harmony on your system without conflicting global package versions.  Your dependencies are saved in the <code>node_modules</code> directory at the root of your project.  You&apos;ll want to add <code>/node_modules/</code> to your project&apos;s <code>.gitignore</code> to keep dependencies out of a Git repository.</p>
+<h3 id="runtime-dependencies">Runtime dependencies</h3>
+<p>If your project has dependencies that are required at runtime, you can install them as above, but with the <code>--save</code> flag instead of <code>--save-dev</code>.  These depdendencies will be listed in the <code>dependencies</code> section of your <code>package.json</code>.  Typically, you&apos;ll only have runtime dependencies when building services or desktop apps - browser-based applications will have a build step where you bundle your dependencies for deployment.</p>
+<h3 id="global-depdendencies">Global depdendencies</h3>
+<p>As mentioned above, <code>npm</code> installs packages locally by default.  In some cases, you might want to have a Node based utility available globally.  However, this is rare, and global installs should be avoided if possible.  Test runners, linters, minifiers, etc. can all be installed locally and are still accessible from your editor or when running <code>package.json</code> scripts or other build steps.</p>
+<p>Some exceptions to the &quot;avoid global installs&quot; recommendation:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/node-inspector" target="_blank"><code>node-inspector</code></a> - Great visual debugger for Node based services/apps (uses Blink Developer Tools).</li>
+<li>Open a pull request if you have other suggestions.</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../tools/index.html" class="navigation navigation-prev " aria-label="Previous page: Tools"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../tools/eslint.html" class="navigation navigation-next " aria-label="Next page: ESLint"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

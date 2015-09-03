@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>ESLint | Planet Web Developer&#39;s Guide</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.3.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../editors/index.html" />
+    
+    
+    <link rel="prev" href="../tools/node.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="1.2" data-basepath=".." data-revision="Wed Sep 02 2015 18:01:01 GMT-0600 (MDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="tools/index.html">
+            
+                
+                    <a href="../tools/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Tools
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="tools/node.html">
+            
+                
+                    <a href="../tools/node.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Node
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="tools/eslint.html">
+            
+                
+                    <a href="../tools/eslint.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        ESLint
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="editors/index.html">
+            
+                
+                    <a href="../editors/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Editors
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="editors/atom.html">
+            
+                
+                    <a href="../editors/atom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Atom
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Planet Web Developer&#39;s Guide</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="eslint">ESLint</h1>
+<p><a href="http://eslint.org/" target="_blank">ESLint</a> is an extremely flexible, unopinionated-by-default linter for JavaScript.  You configure <a href="http://eslint.org/docs/rules/" target="_blank">linter rules</a> in a <code>.eslintrc</code> file at the root of your project.  ESLint can be run before (or as part of) your tests to ensure that your project standards are followed.  In addition, you can configure your editor to run the rules, helping you avoid common mistakes and conform to coding standards as you develop.</p>
+<h2 id="-eslint-config-planet"><code>eslint-config-planet</code></h2>
+<p>The <a href="https://github.com/planetlabs/eslint-config-planet" target="_blank"><code>eslint-config-planet</code> package</a> is a shared ESLint configuration that suggests rules for all Planet web development projects.  You can install the shared configuration and ESLint with the following:</p>
+<pre><code>npm install --save-dev eslint eslint-config-planet
+</code></pre><p>After that, add a <code>.eslintrc</code> file to the root of your project that looks like this:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;extends&quot;</span>: <span class="hljs-string">&quot;planet&quot;</span>
+}
+</code></pre>
+<p>If there are rules that you cannot follow (or otherwise disagree with), you can override them in your <code>.eslintrc</code> file.  For example, if you want your project to allow mixed quotes (instead of enforcing single quotes), your <code>.eslintrc</code> could look like this:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;extends&quot;</span>: <span class="hljs-string">&quot;planet&quot;</span>,
+  <span class="hljs-string">&quot;rules&quot;</span>: {
+    <span class="hljs-string">&quot;quotes&quot;</span>: <span class="hljs-number">0</span>
+  }
+}
+</code></pre>
+<p>(This turns off the <a href="http://eslint.org/docs/rules/quotes" target="_blank"><code>quotes</code> rule</a>.)</p>
+<p>See the <a href="https://github.com/planetlabs/eslint-config-planet" target="_blank"><code>eslint-config-planet</code> readme</a> for more detail on the available profiles.  And please submit a pull request if there is a new profile that you think would be worth supporting.</p>
+<h2 id="running-the-linter">Running the linter</h2>
+<p>After installing and configuring ESLint, you&apos;ll want to run it on your JavaScript source files.  Since you&apos;ve got a locally installed version of <code>eslint</code>, a good way to run it is by adding a <a href="https://docs.npmjs.com/misc/scripts" target="_blank"><code>package.json</code> script</a> - all locally installed binaries are available on your path when running an <code>npm</code> script.</p>
+<p>If you don&apos;t already have any tests for your project, the first thing you might want to do is run the linter as a testing step.  You can do this by adding the following to your <code>package.json</code>:</p>
+<pre><code class="lang-json">  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;test&quot;</span>: <span class="hljs-string">&quot;eslint src&quot;</span>
+  }
+</code></pre>
+<p>Now you can run the linter on all the files in your <code>src</code> directory like this:</p>
+<pre><code>npm test
+</code></pre><p>As you add real tests to your project, you can move linting to a &quot;pretest&quot; script.  For example, assuming you use <a href="http://mochajs.org/" target="_blank"><code>mocha</code></a> to run your tests, your <code>package.json</code> scripts might look like this:</p>
+<pre><code class="lang-json">  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;pretest&quot;</span>: <span class="hljs-string">&quot;eslint src&quot;</span>,
+    <span class="hljs-string">&quot;test&quot;</span>: <span class="hljs-string">&quot;mocha&quot;</span>
+  }
+</code></pre>
+<p>Now <code>npm test</code> will run the inter first, and if that succeeds, <code>mocha</code> will run next.</p>
+<h2 id="editor-configuration">Editor configuration</h2>
+<p>You can set up your editor to run ESLint as you develop.  See the <a href="../editors">editors page</a> to find detail on configuring your favorite editor.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../tools/node.html" class="navigation navigation-prev " aria-label="Previous page: Node"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../editors/index.html" class="navigation navigation-next " aria-label="Next page: Editors"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

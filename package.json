@@ -1,0 +1,25 @@
+{
+  "name": "web-dev",
+  "version": "0.0.0",
+  "description": "Tips, tech, and tactics for Planet web developers",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/planetlabs/web-dev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planetlabs/web-dev/issues"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "npm run doc:serve",
+    "doc:serve": "gitbook serve",
+    "doc:build": "gitbook build",
+    "doc:clean": "rimraf _book",
+    "deploy": "npm run doc:clean && npm run doc:build && gh-pages --dist _book"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.4.0",
+    "gitbook-cli": "^0.3.6",
+    "rimraf": "^2.4.3"
+  }
+}
