@@ -13,3 +13,9 @@ After cloning the repository, set up the development dependencies (this requires
 The source files for the guide are organized by topic in directories at the root of the repository.  You can start up a development server that rebuilds the guide while you make changes to the sources:
 
     npm start
+
+To publish an updated version of the guide, run the following:
+
+    npm run deploy
+
+(This should only be done with the latest from `master` and will soon be automated.)
