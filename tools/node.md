@@ -4,7 +4,7 @@
 
 You should be able to find an installer for your system by visiting https://nodejs.org/.
 
-Installing nodejs in Ubuntu requires adding a PPA, but for your Vagrant or Productions server provisioning, you can use the [nodejs ansible role](https://github.com/planetlabs/planet_roles/tree/master/nodejs) in planet_roles.
+Installing nodejs in Ubuntu requires adding a PPA, but for your Vagrant or production server provisioning, you can use the [nodejs ansible role](https://github.com/planetlabs/planet_roles/tree/master/nodejs) in planet_roles.
 
 ## Managing multiple versions of Node
 
